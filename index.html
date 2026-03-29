@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hamak Robotics Club</title>
+  <title>Microbots Team</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 
@@ -17,78 +17,79 @@
     }
 
     body {
-      background: linear-gradient(135deg, #0f2740, #0a1f2e);
+      background: #07121c;
       color: white;
       text-align: center;
-      overflow-x: hidden;
     }
 
-    .cover {
-      height: 220px;
-      background: linear-gradient(rgba(0,0,0,0.3), rgba(10,31,46,0.9)),
-                  url('cover.jpg') center/cover no-repeat;
+    /* 🔥 HERO */
+    .hero {
+      padding: 80px 20px 60px;
+      background: radial-gradient(circle at top, #0f2f4d, #07121c);
     }
 
+    .hero h1 {
+      font-size: 38px;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.9;
+      font-size: 18px;
+      color: #cfe8ff;
+    }
+
+    /* 🔥 CONTAINER */
     .container {
       max-width: 600px;
       margin: auto;
-      padding: 20px;
-      transform: translateY(-70px);
+      padding: 30px 20px;
     }
 
     .logo {
-      width: 120px;
-      height: 120px;
+      width: 110px;
+      height: 110px;
       border-radius: 50%;
-      border: 4px solid #ff6b35;
+      margin-top: -60px;
+      border: 4px solid #00c6ff;
       background: white;
-      object-fit: cover;
-      box-shadow: 0 0 25px rgba(255, 107, 53, 0.6);
+      box-shadow: 0 0 25px rgba(0,198,255,0.6);
     }
 
-    h1 {
-      margin-top: 15px;
-      font-size: 26px;
-      color: #ffffff;
-    }
-
-    .desc {
-      margin-top: 10px;
-      font-size: 14px;
-      color: #cfe8ff;
-      line-height: 1.7;
-    }
-
+    /* 🔥 BUTTONS */
     .links {
-      margin-top: 25px;
+      margin-top: 30px;
     }
 
     .btn {
       display: flex;
       align-items: center;
       gap: 15px;
-      padding: 16px;
-      margin-bottom: 14px;
-      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 15px;
+      border-radius: 18px;
       text-decoration: none;
       color: white;
 
-      background: linear-gradient(135deg, #1e3a5f, #27496d);
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(12px);
       border: 1px solid rgba(255,255,255,0.1);
 
-      backdrop-filter: blur(10px);
       transition: 0.3s;
     }
 
     .btn:hover {
-      transform: scale(1.05);
-      background: linear-gradient(135deg, #ff6b35, #ff8c42);
-      box-shadow: 0 0 20px rgba(255, 107, 53, 0.6);
+      transform: translateY(-5px);
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      box-shadow: 0 10px 30px rgba(0,198,255,0.5);
     }
 
     .icon {
-      width: 42px;
-      height: 42px;
+      width: 45px;
+      height: 45px;
       border-radius: 50%;
       background: white;
       padding: 6px;
@@ -99,7 +100,7 @@
     }
 
     .text h3 {
-      font-size: 15px;
+      font-size: 16px;
     }
 
     .text p {
@@ -108,8 +109,8 @@
     }
 
     .footer {
-      margin-top: 25px;
-      font-size: 12px;
+      margin-top: 30px;
+      font-size: 13px;
       color: #7dd3fc;
     }
 
@@ -119,56 +120,58 @@
 
 <body>
 
-  <div class="cover"></div>
+  <!-- 🔥 HERO -->
+  <section class="hero">
+    <h1>MICROBOTS TEAM</h1>
+    <p>
+      فريق مايكروبوتس هو فريق تطوعي جامعي يقع في كلية الهندسة الميكانيكية والكهربائية
+      لجامعة دمشق. يهدف الفريق إلى نشر العلم والمعرفة بمجال الروبوتيك والذكاء الصناعي
+    </p>
+  </section>
 
   <div class="container">
 
-    <img src="logo.jpg" class="logo" />
+    <img src="assets/images/logo.png" class="logo" />
 
-    <h1>Hamak Robotics Club</h1>
-
-    <p class="desc">
-      فريق تطوعي جامعي يهدف لنشر المعرفة في مجال الروبوتيك والذكاء الصناعي
-    </p>
-
+    <!-- 🔥 LINKS -->
     <div class="links">
 
-      <a class="btn" href="https://www.facebook.com/share/18V6xi5Sxb/" target="_blank">
+      <a class="btn" href="https://www.facebook.com/profile.php?id=61571055509202" target="_blank">
         <img class="icon" src="https://cdn-icons-png.flaticon.com/512/20/20837.png">
         <div class="text">
-          <h3>FACEBOOK</h3>
+          <h3>Facebook</h3>
           <p>آخر الأخبار والنشاطات</p>
         </div>
       </a>
 
-      <a class="btn" href="https://www.instagram.com/hamak.ai.robotics.club/" target="_blank">
+      <a class="btn" href="https://www.instagram.com/microbots_team" target="_blank">
         <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
         <div class="text">
-          <h3>INSTAGRAM</h3>
+          <h3>Instagram</h3>
           <p>محتوى مميز وصور</p>
         </div>
       </a>
 
-      <a class="btn" href="https://www.linkedin.com/company/hamak-ai-robotics-club/about/?viewAsMember=true" target="_blank">
+      <a class="btn" href="https://www.linkedin.com/company/microbots-team/" target="_blank">
         <img class="icon" src="https://cdn-icons-png.flaticon.com/512/61/61109.png">
         <div class="text">
-          <h3>LINKEDIN</h3>
+          <h3>LinkedIn</h3>
           <p>الحضور المهني</p>
         </div>
       </a>
 
-      <a class="btn" href="https://t.me/HamakAIClub" target="_blank">
+      <a class="btn" href="https://t.me/microbotsTeam" target="_blank">
         <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
         <div class="text">
-          <h3>TELEGRAM</h3>
+          <h3>Telegram</h3>
           <p>الإعلانات والمستجدات</p>
         </div>
       </a>
 
-      <a class="btn" href="https://www.youtube.com/@HamakAiRoboticsClub" target="_blank">
+      <a class="btn" href="https://youtube.com/@microbotsteam" target="_blank">
         <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
         <div class="text">
-          <h3>YOUTUBE</h3>
+          <h3>YouTube</h3>
           <p>الفيديوهات</p>
         </div>
       </a>
@@ -176,7 +179,7 @@
       <a class="btn" href="https://github.com/Hamak-Ai-Robotics-Club" target="_blank">
         <img class="icon" src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
         <div class="text">
-          <h3>GITHUB</h3>
+          <h3>GitHub</h3>
           <p>مشاريعنا البرمجية</p>
         </div>
       </a>
@@ -184,7 +187,7 @@
     </div>
 
     <div class="footer">
-      Powered by Hamak Robotics Club
+      Powered by Microbots Team 🚀
     </div>
 
   </div>
